@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio khaled</title>
+</head>
+<body id="main-content">
+    <div id="intro-screen">
+        <h1>Welcome To<br>My Portfolio</h1>
+        <div class="intro-icon">
+            <button><i class="ri-code-s-slash-line icon" style="font-size: 2rem;"></i></button>
+            <button><i class="ri-user-line" style="font-size: 2rem;"></i></button>
+            <button><i class="ri-github-fill" style="font-size: 2rem;"></i></button>
+        </div>
+        <button class="intro-p"><span id="typed-intro"></span></button>
+    </div>
+    <div class="background">
+        <div class="circle top-left"></div>
+        <div class="circle top-right"></div>
+        <div class="circle bottom-left"></div>
+        <div class="circle bottom-right"></div>
+    </div>
+    <div class="nav-bar">
+        <div>
+            <h3 class="nav-item" data-target="home">Home</h3>
+            <h3 class="nav-item" data-target="about">About</h3>
+            <h3 class="nav-item" data-target="skills">Skills</h3>
+            <h3 class="nav-item" data-target="send-message">Send Mssg</h3>
+        </div>
+    </div>
+    <div class="home section" id="home">
+        <img src="photo.png">
+        <h1>Software<br> <span>Developer</span></h1>
+        <p><span id="typed-text"></span></p><br>
+        <p class="p2">This portfolio is a curated collection of work that<br> showcases my skills, projects, and professional experience</p>
+        <div class="button">
+            <button>Python</button>
+            <button>C++</button>
+            <button>Js</button>
+            <button>Html</button>
+            <button>Css</button>
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com" target="_blank" style="color: #E4405F;">
+                <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" style="color: #0A66C2;">
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="color: #1877F2;">
+                <i class="ri-facebook-fill"></i>
+            </a>
+        </div>
+    </div>
+    <div class="about section" id="about">
+        <h1 class="titre1">About Me</h1>
+        <h6><i class="ri-magic-line"></i>Few information about my life and my education and my experience<i class="ri-magic-line"></i></h6>
+        <p><span class="hi">Hello, I'm</span><br><span class="name">khaled bnou el walid bourghida</span></p>
+        <p>Bourghida Khaled is a student at École Nationale Polytechnique<br>in Algiers. He specializes in web development and data science. He is<br>also involved in various campaigns focused on technology, education, communication.</p>
+        <button class="btn-cv">Download CV</button>
+        <div class="button-2">
+            <div class="T"><i class="ri-code-s-slash-line icon"></i> <p>number of projets </p><h1>3</h1></div>
+            <div class="T"><i class="ri-medal-line icon"></i>  <p>number of certificates </p><h1>2</h1></div>
+            <div class="T"><i class="ri-global-line icon"></i> <p>number of experience </p><h1>1</h1></div>
+        </div>
+    </div>
+    <div class="skills section" id="skills">
+        <h1>Portfolio Showcase</h1>
+        <button class="button-projet" id="pls"><i class="ri-code-s-slash-line icon"></i>Projects</button>
+        <button class="button-certificates" id="pls-1"><i class="ri-medal-line icon"></i>Certificates</button>
+        <button class="button-skills" id="pls-2"><i class="ri-global-line icon"></i>Tech Stack</button>
+        <div class="projects-box" id="target">
+            <div class="project-1">
+                <img src="project-1.png">
+                <h2>SkillSheet</h2>
+                <p>Skillsheet is a platform that connects workers with employers, making hiring simple and efficient</p>
+                <div class="btn">
+                    <a href="#" target="_blank" style="text-decoration: none;">Try It<i class="ri-arrow-right-circle-fill" ></i></a>
+                    <a href="#" style="text-decoration: none;">More Info</a>
+                </div>
+            </div>
+            <div class="project-2">
+                <img src="project-2.png">
+                <h2>Bacademy</h2>
+                <p>A study platform that provides resources, lessons and programs to help users enhance their knowledge and skills.</p>
+                <div class="btn">
+                    <a href="#" target="_blank" style="text-decoration: none;">Try It<i class="ri-arrow-right-circle-fill" ></i></a>
+                    <a href="#" style="text-decoration: none;">More Info</a>
+                </div>
+            </div>
+        </div>
+        <div class="cer-box" id="target1">
+            <div class="cer-1">
+                <img src="roboko.jpg">
+            </div>
+            <div class="cer-2">
+                <img src="bac.jpg">
+            </div>
+        </div>
+        <div class="tech-stack" id="target2">
+            <div class="img-1">
+                <img src="py.png">
+            </div>
+            <div class="img-2">
+                <img src="C++.png">
+            </div>
+            <div class="img-3">
+                <img src="js.png">
+            </div>
+            <div class="img-4">
+                <img src="html-img.png">
+            </div>
+            <div class="img-5">
+                <img src="css-img.png">
+            </div>
+        </div>
+    </div>
+    <div class="message-form-container section" id="send-message">
+        <h2>Send Me a Message</h2>
+        <form id="contactForm" method="POST" action="/send-message">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="confirmationMessage" style="display: none; color: green; margin-top: 10px;">
+            Your message has been sent successfully!
+        </div>
+        <p id="responseMessage"></p>
+    </div>
+    <div class="line"></div>
+    <div class="finaly">
+        <h3>B.khaled</h3>
+        <div class="finaly-link">
+            <a href="#">Linkedin</a>
+            <a href="#">Youtube</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>
